@@ -1,0 +1,16 @@
+<div class="mt-4">
+  <h3 class="text-center">Edit course</h3>
+  <form method="POST" action="/courses/{{course._id}}?_method=PUT">
+    <div class="input-group">
+      <label for="name" class="input-group-text bg-primary text-white">Name</label>
+      <input type="text" name="name" class="form-control" value="{{course.name}}">
+    </div>
+    <div class="input-group mt-4">
+      <label for="description" class="input-group-text bg-primary text-white">Description</label>
+      <textarea name="description" class="form-control">{{course.description}}</textarea>
+    </div>
+    <div class="text-center">
+      <button class="btn">Save</button>
+    </div>
+  </form>
+</div>
